@@ -98,6 +98,8 @@
            android:textAppearance="?android:attr/textAppearance"
            android:textStyle="bold"
            android:typeface="serif"/>
+
+
     </ScrollView>
 
 

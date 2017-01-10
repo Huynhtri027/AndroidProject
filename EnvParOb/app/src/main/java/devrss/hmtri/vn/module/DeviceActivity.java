@@ -20,4 +20,7 @@ public class DeviceActivity extends AppCompatActivity {
         Tb2 = (Button)findViewById(R.id.bt2);
         Tb3 = (Button)findViewById(R.id.bt3);
     }
+
+
+
 }
