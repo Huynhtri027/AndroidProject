@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context="devrss.hmtri.vn.module.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temperature:"
+            android:textSize="30dp"
+            android:id="@+id/id_temperature" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="200dp"
+            android:paddingRight="20dp"
+            android:text="30.20"
+            android:textSize="30dp"
+            android:id="@+id/id_temperaturevlue" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="280dp"
+            android:paddingRight="5dp"
+            android:text="@string/tv_celsius"
+            android:textSize="30dp"
+            android:id="@+id/id_tempecelsius" />
+        tv_celsius
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_temperature"
+            android:paddingLeft="80dp"
+            android:id="@+id/img_temperature"
+            android:layout_alignTop="@+id/id_temperature"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/id_temperature" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Concentr PH:"
+            android:textSize="30dp"
+            android:id="@+id/id_concentration"
+            android:layout_below="@+id/img_temperature"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_temperature"
+            android:paddingLeft="200dp"
+            android:paddingRight="10dp"
+            android:text="7.0"
+            android:textSize="30dp"
+            android:id="@+id/id_phvalue" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_temperature"
+            android:paddingLeft="245dp"
+            android:paddingRight="1dp"
+            android:text="@string/tv_ph"
+            android:textSize="30dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Concentr Oxy:"
+            android:textSize="30dp"
+            android:id="@+id/id_concentrationoxy"
+            android:layout_below="@+id/id_concentration"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_phvalue"
+            android:paddingLeft="200dp"
+            android:paddingRight="10dp"
+            android:text="21"
+            android:textSize="30dp"
+            android:id="@+id/id_oxyvalue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_phvalue"
+            android:paddingLeft="240dp"
+            android:paddingRight="10dp"
+            android:text="@string/tv_prh"
+            android:textSize="30dp" />
+
+    </RelativeLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_marginBottom="16dp"
+            android:src="@android:drawable/ic_input_add" />
+
+    <include layout="@layout/fab_layout"/>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart"
+            android:layout_width="379dp"
+            android:layout_height="267dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
+
+
